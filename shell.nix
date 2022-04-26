@@ -5,8 +5,10 @@ pkgs.mkShell {
   buildInputs = [
     pkgs.nodejs-14_x
     pkgs.yarn
-    pkgs.libudev0-shim
+    pkgs.libudev
     pkgs.python37
+    pkgs.python37Packages.pipInstallHook
+    pkgs.pkg-config
     pkgs.gnumake
     pkgs.curl
     pkgs.openssh
